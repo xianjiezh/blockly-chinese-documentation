@@ -38,26 +38,25 @@ Blocky 全部都在客户端, 不需要从服务器的支持(除非你想用它�
 
 上面的使用的`Blockly.inject` 方法的第二个参数是一个对象,  这些都被用于配置, 支持下面的选项. 
 
-项目            |    类型     |      描述
-------------------------------------
-collapse        |   boolean  | 允许块折叠或展开, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
-
-comments        |   boolean  | 允许块有备注, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
-css             |   boolean  | 如果是false, 不会注入css, 会只依靠用户写的css
-disable         |   boolean  | 允许块是否被disable, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
-grid            |   object   | 配置块的栅格布局, [看这里](https://developers.google.com/blockly/guides/configure/web/grid)
-horizontalLayout|   boolean  | toolbox 是否是横向的, true是横向的, false 是垂直的, 默认是false
-maxBlocks       |   number   | 能创建的最大的block数量, 默认是无限的
-media           |   stirng   | Blockly媒体(如音频)的路径, 默认是https://blockly-demo.appspot.com/static/media/"
-oneBasedIndex   |   boolean  |  字符串和数组操作开始的下标, true为1, false 为 0, 默认是true
-readOnly        |   boolean  |  如果是 true, 用户不能修改, 不会显示toolbox和trashcan.默认是false
-rtl             |  boolean   |  如果为true, 则会镜像编辑器(对于阿拉伯语或希伯来语语言环境). 请参阅RTL演示. 默认为false.
-scrollbars      |  boolean   |  设置 workspace 是否可被滚动, 默认是true
-sounds          |  boolean   |  如果是false, 不会有声音(比如点击和删除的声音) 默认是true
-toolbox         |xml结构的string|  用户可用的categories和块的树状结构. 请看下面的详细信息.
-toolboxPosition |  boolean   |  如果"start"toolbox位于顶部(如果是水平)或左侧(如果是垂直和LTR)或右侧(如果是垂直和RTL). 如果"end"toolbox位于对面. 默认为"start"。
-trashcan        |  boolean   |  展示或者不展示垃圾桶, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
-zoom            |  object    |  配置块的空间特征, 具体的[看这里](https://developers.google.com/blockly/guides/configure/web/zoom)
+|项目            |    类型         |      描述
+| --------       | -----:         | :----: |
+|collapse        |   boolean      | 允许块折叠或展开, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
+|comments        |   boolean      | 允许块有备注, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
+|css             |   boolean      | 如果是false, 不会注入css, 会只依靠用户写的css
+|disable         |   boolean      | 允许块是否被disable, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
+|grid            |   object       | 配置块的栅格布局, [看这里](https://developers.google.com/blockly/guides/configure/web/grid)
+|horizontalLayout|   boolean      | toolbox 是否是横向的, true是横向的, false 是垂直的, 默认是false
+|maxBlocks       |   number       | 能创建的最大的block数量, 默认是无限的
+|media           |   stirng       | Blockly媒体(如音频)的路径, 默认是https://blockly-demo.appspot.com/static/media/"
+|oneBasedIndex   |   boolean      |  字符串和数组操作开始的下标, true为1, false 为 0, 默认是true
+|readOnly        |   boolean      |  如果是 true, 用户不能修改, 不会显示toolbox和trashcan.默认是false
+|rtl             |   boolean       |  如果为true, 则会镜像编辑器(对于阿拉伯语或希伯来语语言环境). 请参阅RTL演示. 默认为false.
+|scrollbars      |   boolean       |  设置 workspace 是否可被滚动, 默认是true
+|sounds          |   boolean       |  如果是false, 不会有声音(比如点击和删除的声音) 默认是true
+|toolbox         |  xml结构的string|  用户可用的categories和块的树状结构. 请看下面的详细信息.
+|toolboxPosition |  boolean       |  如果"start"toolbox位于顶部(如果是水平)或左侧(如果是垂直和LTR)或右侧(如果是垂直和RTL). 如果"end"toolbox位于对面. 默认为"start"。
+|trashcan        |  boolean       |  展示或者不展示垃圾桶, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
+|zoom            |  object        |  配置块的空间特征, 具体的[看这里](https://developers.google.com/blockly/guides/configure/web/zoom)
 
 最重要的选项是 `toolbox`, 这是一个树状的 xml, 它指定了在 toolbox(侧边菜单)内的有什么块, 是怎样组织起来的, 以及他们里面是含有 categories
 
