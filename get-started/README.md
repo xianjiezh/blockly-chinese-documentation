@@ -38,13 +38,13 @@ Blocky 全部都在客户端, 不需要从服务器的支持(除非你想用它�
 
 上面的使用的`Blockly.inject` 方法的第二个参数是一个对象,  这些都被用于配置, 支持下面的选项. 
 
-|项目            |    类型         |      描述
+| 对象的key       |    类型         |      描述
 | --------       | -----:         | :----: |
 |collapse        |   boolean      | 允许块折叠或展开, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
 |comments        |   boolean      | 允许块有备注, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
 |css             |   boolean      | 如果是false, 不会注入css, 会只依靠用户写的css
 |disable         |   boolean      | 允许块是否被disable, 如果 toolbox 的下面有 categories, 则默认为 true, 否则为false
-|grid            |   object       | 配置块的栅格布局, [看这里](https://developers.google.com/blockly/guides/configure/web/grid)
+|grid            |    object       | 配置块的栅格布局, [看这里](https://developers.google.com/blockly/guides/configure/web/grid)
 |horizontalLayout|   boolean      | toolbox 是否是横向的, true是横向的, false 是垂直的, 默认是false
 |maxBlocks       |   number       | 能创建的最大的block数量, 默认是无限的
 |media           |   stirng       | Blockly媒体(如音频)的路径, 默认是https://blockly-demo.appspot.com/static/media/"
